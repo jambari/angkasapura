@@ -23,7 +23,7 @@ class PhaseReportSheetAdmin(admin.ModelAdmin):
         ),
         (
             None, {
-                'fields': ['dirasakan', 'skala_mmi']
+                'fields': ['dirasakan']
             }
         )
     ]

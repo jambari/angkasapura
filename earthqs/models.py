@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-#from kantor.pegawais.models import Pegawai
+from pegawais.models import Pegawai as pegawai
 
 # Create your models here.
 MAG_CHOICES = (
@@ -62,7 +62,7 @@ class PhaseReportSheet(models.Model):
     skala_mmi = models.CharField(help_text="Jika Gempa Dirasakan", blank=True, max_length=255)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    #inisial = models.ForeignKey(Pegawai, on_delete=models.CASCADE)
+    #inisial = models.ForeignKey(pegawai , on_delete=models.CASCADE)
 
 
     def __str__(self):
